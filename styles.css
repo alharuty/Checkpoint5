@@ -21,7 +21,10 @@ h3 {
     background-color: #f7d54c;
     line-height: 30px;
 }
-
+h2, 
+.preguntas {
+    padding: 10px;
+}
 .contenedor-izquierdo,
 .contenedor-derecho {
     background-color: #f7d54c;
