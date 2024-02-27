@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Python con Alla</title>
+
+    <link rel="icon" type="image/png" href="Python-logo-notext.svg.png">
+
+    <script src="https://kit.fontawesome.com./0f3793b933.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-izquierdo"></div>
+    
+        <div class="contenedor-central">
+            <div class="cabecera"  id="header">
+                <div class="bienvenida">
+                    <div class="logo">
+                        <a href="https://www.python.org/"><img src="Python-logo-notext.svg.png" alt="logo de Python"></a>
+                    </div>
+                    <div class="text-bienvenida">
+                        <h1> APRENDE SOBRE PYTHON</h1>
+                    </div>
+                </div>
+                <div class="informacion">
+                    <h2> En este post reuniremos información importante sobre algunas de las utilidades más relevantes para poder programar con Python respondiendo a las siguientes preguntas: </h2>
+                    <div class="preguntas">
+                        <li><a href="#pregunta1">¿Qué es una condicional en Python?</a></li>
+                        <li><a href="#pregunta2">¿Cuáles son los diferentes tipos de bucles en python? ¿Por qué son útiles?</a></li>
+                        <li><a href="#pregunta3">¿Qué es una comprensión de listas en python?</a></li>
+                        <li><a href="#pregunta4">¿Qué es un argumento en Python?</a></li>
+                        <li><a href="#pregunta5">¿Qué es una función de Python Lambda?</a></li>
+                        <li><a href="#pregunta6">¿Qué es un paquete pip?</a></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuerpo-pagina">
+                <div class="pregunta" id="pregunta1">
+                    <h3>¿Qué es una condicional en Python?</h3>
+                    <div class="contenedor-pregunta">
+                        <p>Una condicional en Python, es una estructura de control que permite evaluar si una o más condiciones se cumplen
+                         para ejecutar la acción que le solicitamos. Este tipo de declaraciones son fundamentales para la programación ya que
+                           permiten que un programa tome decisiones y ejecute diferentes bloques de código según ciertas condiciones. Sirven para: </p>
+                        <div class="utilidad">
+                            <li>Toma de decisiones.</li>
+                            <li>Control de flujo.</li>
+                            <li>Manejo de casos especiales.</li>
+                            <li>Validación de entrada.</li>
+                            <li>Personalización del comportamiento.</li>
+                            <li>Optimización de recursos.</li>
+                            <li>Manejo de errores.</li>
+                        </div>
+                        <p class="principales">Los principales tipos de condicionales son: <strong>if, if - else, if - elif - else</strong>. A continuación vamos a ver cómo y cuando se usan.
+                        <div class="condicionales">
+                            <li><strong>Condicional if:</strong></li>
+                            <p>La sentencia if de Python es una de las sentencias condicionales más utilizadas en la programación; si la condición se cumple se ejecuta el código.
+                            Tenemos que proporcionar la condición y la acción a ejecutarse si esa condición es verdadera. En el ejemplo siguiente, if toma la edad y si es mayor
+                                que 18 ésta imprimirá la frase "La persona es mayor de edad." Si el número es menor que 18, no imprime nada y se sale de la condición.
+                            </p>
+                            <img src="Captura de pantalla 2024-02-27 115403.png" alt="condicinal if en pyhon">
+                            <li><strong>Condicional if - else:</strong></li>
+                            <p>A diferencia de la sentencia if, la sentencia if-else se utiliza para ejecutar tanto la parte verdadera como la falsa de una condición. Si la condición es verdadera,
+                                    se ejecuta el bloque de código if. Si la condición es falsa, se ejecuta el bloque de código else. En este ejemplo, if toma la edad y si es mayor de 18
+                                imprimirá en pantalla "La persona es mayor de edad.", y si es menor que 18, imprimirá "La persona es menor de edad.". Con este ejemplo 
+                                se ve de forma muy clara la diferencia entre if e if-else.</p>
+                            <img src="if-else.png" alt="condicional if-else en python">
+                            <li><strong>Condicional if - elif -else:</strong></li>
+                            <p>La estructura if-elif-else en Python se utiliza para evaluar múltiples condiciones de manera secuencial, así como en el anterior caso solo teníamos 2 condiciones, con elif 
+                                podemos crear tantas condiciones como queramos siempre que if sea falso. En el siguiente ejemplo, vemos que a parte de las 2 codiciones que teniamos anteriormente, 
+                                hemos incluído en elif los números que sean menor de 0 y en ese caso nos imprimirá "La edad es incorrecta." ya que sabemos que la edad debe ser siempre mayor que 0.</p>
+                            <img src="if-elif-else.png" alt="condicional if-elif-else">
+                            <li><strong>Condicionales anidadas:</strong></li>
+                            <p>Este tipo de condicionales, son los que incluyen un condicional dentro de otro.</p>
+                            <img src="anidados.png" alt="condicionales anidadas">
+                            <div class="nota-importante">
+                                <i class="fa-solid fa-exclamation"></i><p>Nota importante: todas las condicionales se secriben en minúscula.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     
+                </div>
+
+                <div class="pregunta" id="pregunta2">
+                    <h3>¿Cuáles son los diferentes tipos de bucles en Python? ¿Por qué son útiles?</h3>
+                    <div class="contenedor-pregunta">
+                        <p>En Python, los bucles se utilizan para repetir varias veces la ejecución de una parte de un código, tantas veces como queramos mientras cumpla las condiciones que deseemos. Sirven para: </p>
+                        <div class="utilidad">
+                            <li>Iteración sobre secuencias: Permiten recorrer e iterar sobre listas, tuplas, cadenas, etc, de manera eficiente y ejecutar el código que queramos sobre ellos. </li>
+                            <li>Automatización de tareas repetitivas: Nos ayudan a automatizar y resumir un código que necesita ejecutarse más de una vez.</li>
+                            <li>Implementación de algoritmos: Muchos algoritmos y estructuras de datos se basan en bucles.</li>
+                        </div>
+                        <p class="principales">Los 2 bucles que existen en Python son: <strong>bucle While y Bucle For</strong>. A continuación vamos a ver cómo y cuando se usan.
+                        <div class="condicionales">
+                            <li>Bucle While:</li>
+                            <p>Mediante el bucle While, se ejecuta una porción de código una y otra vez hasta que la condición sea falsa. En el siguiente ejemplo, se crea un contador y se inicializa a 0,
+                            y con el bucle while, vamos a ir iterando el contador hasta que el contador sea menor que 5, lo que nos devolverá todos los números impresos de uno a uno, desde 0 hasta 4.
+                            Esto significaría, imprímeme el contador y sumale 1, hasta que el contador sea menor que 5.  
+                            </p>
+                            <img src="bucle-while.png" alt="bucle while en python">
+                            <img src="print-while.png" alt="devuelve bucle while en python">
+
+                            <li>Bucle For:</li>
+                            <p>En Python, un bucle for se utiliza para iterar sobre una secuencia (como listas, tuplas, cadenas, diccionarios o rangos) y ejecutar un bloque de código para cada elemento 
+                                mientras la secuencia exista. En nuestro ejemplo, la secuencia es frutas, y con el bucle for vamos a imprimir cada elemento que hay dentro de esta secuencia,
+                                que en este caso es una lista. La palabra que va después de for, puede ser cualquier palabra, pero siempre vamos a intentar que sea una palabra que describa el elemento que
+                                se está imprimiendo. En este caso, sabemos que estamos tratando con una lista que contiene frutas, por lo que a cada elemento llamaremos fruta. </p>
+                            <img src="bucle-fr.png" alt="bucle for en python">
+                            <img src="print-bucle-for.png" alt="devuelve bucle for en python">
+                            <div class="nota-importante">
+                                <i class="fa-solid fa-exclamation"></i><p>Nota importante: al trabajar con bucles While, es importante tener cuidado para evitar crear bucles infinitos y asegurarse que el programa 
+                                    se comporte como se espera.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta" id="pregunta3">
+                    <h3>¿Qué es una comprensión de listas en python?</h3>
+                    <div class="contenedor-pregunta">
+                        <p>La comprensión de listas, list comprehension en ingles, se usa para crear listas de forma más concisa y abreviada, en una sola línea de código, usando el bucle for para incluir condiciones y filtrar 
+                            los elementos según nuestros criterios. Sirven para:</p>
+                        <div class="utilidad">
+                            <li>Crear listas nuevas usando condicionales</li>
+                            <li>Crear listas nuevas a partir de listas ya existentes.</li>
+                            <li>Hacer operaciones matemásticas a partir de listas de números ya existentes.</li>
+                            <li>Filtrar datos y elementos.</li>
+                        </div>
+                        <p class="principales">La sintaxis de una comprension de listas sería la siguiente:</p>
+                        <div class="sintaxis">
+                            <p>nueva_lista = [expresion <span>for</span> elemento <span>in</span> secuencia]</p>
+                            <strong> o la siguiente si queremos incluir una condición</strong>
+                            <p>nueva_lista = [expresion <span>for</span> elemento <span>in</span> secuencia <span>if</span> condicion]</p>
+                        </div>
+                
+                        <div class="significados">
+                            <li>expresion: Es la expresión que define los elementos de la nueva lista, al igual que en la condicional for podemos llamarlo como queramos pero es aconsejable que sea un nombre descriptivo.</li>
+                            <li>elemento: Es la variable que toma los valores de la secuencia, será igual a expresion.  </li>
+                            <li>secuencia: Es la secuencia de la cual se toman los valores para construir la lista, es decir la lista ya existente.</li>
+                            <li>condicion (opcional): Es una condicional que filtra los elementos de la secuencia, siempre será la condicional if.</li>
+                        </div>
+                        <img src="comprension-lista.png" alt="comprension de listas en python">
+                        <img src="comprension-devolver.png" alt="devuelve comprension de listas en python">
+                    </div>
+                </div>
+
+                <div class="pregunta" id="pregunta4">
+                    <h3>¿Qué es un argumento en Python?</h3>
+                    <div class="contenedor-pregunta">
+                        <p>En Python, los argumentos son los valores que se proporcionan a una función para permitir su ejecución y operación sobre los datos suministrados, es decir, son los valores oligatorios que el programador debe 
+                            proporcionar mientras llama a una función para que se ejecute dicha función. Estos valores se ingresan después de la función, dentro de paréntesis () y separados por comas en caso de que exista más de una.</p>
+                        <strong class="parrafo">¿Cómo sabré si necesito pasar argumentos a mi función?</strong>
+                        <p>Para determinar si una función requiere argumentos, debes inspeccionar la forma en la que se declara tu función, si en la primera línea después del nombre de tu función, hay un nombre de variable dentro de los paréntesis,
+                         significa que en la llamada de la función también debes proporcionar un argumento. </p>
+                        <img src="argumentos.png" alt="argumentos en python">
+                        <img src="arg-no-arg.png" alt="argumentos o no en python">
+                        <p>Cuando enviamos argumentos a una función, estos se reciben por orden en los parámetros definidos. Se dice por tanto que son argumentos por posición</p>
+                        <img src="ejemplo-args.png" alt="argumentos o no en python">
+                        <div class="nota-importante">
+                            <i class="fa-solid fa-exclamation"></i><p>Nota importante: si en la creación de la función se ingresa un argumento, y en la llamada no, la función no se ejecutará.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta" id="pregunta5">
+                    <h3>¿Qué es una función de Python Lambda?</h3>
+                    <div class="contenedor-pregunta">
+                        <p>Lambda es la forma más sencilla de crear funciones cortas que podemos usarlos dentro de otras funciones. Se crean usando una sola línea de código y consta mínimo de un parámetro.</p>
+                        <p class="principales">La sintaxis de un lambda sería la siguiente:</p>
+                        <div class="sintaxis">
+                            <p>mi_funcion = <span>lambda</span> parámetros: cuerpo de la función</p>
+                        </div>
+                        <div class="significados">
+                            <li>mi_función = creamos una nueva variable</li>
+                            <li>parámetros = son los elementos que se va utilizar par ejecutar la función</li>
+                            <li>cuerpo de la función = pasos que queremos que realice la función, puede ser imprimir en pantalla, concatenaciones de los parámetros, operaciones matemáticas con los parámetros, etc.</li>
+                        </div>
+                        <img src="lambda.png" alt="lambda en python">
+                        <p>En este código, hemos utilizado una expresión lambda para crear una variable llamada nombre_completo, que toma dos argumentos: nombre y apellido. En este caso, la función lambda devuelve una cadena formada por la concatenación del nombre y el apellido.</p>
+                        <p>Después de definir la función lambda, utilizamos la función print para imprimir el resultado de llamar a nombre_completo con los valores 'Alla' y 'Haruty' como argumentos. En otras palabras, estamos utilizando la función lambda para generar y mostrar el nombre completo, en este caso nos devolvería "Alla Haruty"</p>
+                        <strong class="parrafo">¿Y cómo puedo usar una función lambda dentro de otra función?</strong>
+                        <p>La utilización de una función lambda dentro de otra función en Python es sencilla y se logra llamando a la función lambda en la sección del código donde sea necesario, previamente habiéndola definido..</p>
+                        <img src="utilizacion-lambda.png" alt="utilizacion lambda en python">
+                        <img src="devuelve-lambda.png" alt="utilizacion lambda en python">
+                    </div>
+                </div>
+
+                <div class="pregunta" id="pregunta6">
+                    <h3>¿Qué es un paquete pip?</h3>
+                    <div class="contenedor-pregunta">
+                        <p>Un paquete pip es un conjunto de archivos que se denominan módulos y están compuestos por funciones creadas por otros programadores. Este tipo de archivos ayudan, facilitan y agilizan nuestro trabajo ya que nos permiten utilizar funciones que posiblemente hayan tomado mucho tiempo
+                             en ser creados por otros programadores que actualmente nos permiten reutilizarlos, al ser de domino público en Python Package Index (<a href="https://pypi.org/">Página oficial</a>).</p>
+                        <strong class="parrafo">¿Y cómo puedo utilizar estos módilos de PyPi?</strong>
+                        <div class="explicacion">
+                            <p>Para poder utilizar los paquetes pip, primero debemos instalaros y tenerlos actualizados en la última versión siempre.</p>
+                            <strong>PASO 1: INSTALAR EL PAQUETE DESEADO</strong>
+                            <p>En este ejemplo vamos a instalar un paquete llamado NumPy, este es un paquete que nos permite procesar números, strings, y objetos, mediante diferentes funciones por los que está compuesto.</p>
+                            <p> Para ello iremos a nuestra terminal y escribiremos el comando: pip install numpy y presionaremos enter.</p>
+                            <img src="install-numpy.png" alt="instalar nump en python">
+                            <p>Una vez instalado nos aparecerá en pantalla el mensaje: Successfully installed numpy-version</p>
+                            <img src="numpy-instalado.png" alt="instalar nump en python">
+                            <p>En caso de tenerlo ya instalado nos aparecería el mensaje: Requirement already satisfied: numpy directorio/donde/está/instalado </p>
+                            <strong>PASO 2: IMPORTARLO PARA PODER USARLO</strong>
+                            <p>Para poder usar las funciones de estos módulos, debemos importarlos cada vez que los necesitemos, ya sean dentro de un archivo.py o desde el terminal, en modo repl. El comando es: import numpy</p>
+                            <img src="import-numpy.png" alt="importar nump en python">
+                            <img src="numpy-archivo.png" alt="usando nump en python">
+                            <br>
+                            <strong>PASO 3: LLAMAR A LA FUNCIÓN QUE QUERAMOS</strong>
+                            <p>En nuestro caso usaremos la función numpy.arange() , que sirve para crear un array con números del rango que queramos.</p>
+                            <img src="usando-numpy.png" alt="usando nump en python">
+                            <img src="numpy-archivo-print.png" alt="usando nump en python">
+                            <img src="devuelve-numpyy.png" alt="usando nump en python">
+                            <p>Para ello creamos una variable llamada num_range y con la función numpy.arange(11) y así creamos una lista de números del 1 al 10, ya que el último número no se incluye.</p>
+                        </div>
+                        <strong class="parrafo">Otros comandos de interés:</strong>
+                        <div class="significados">
+                            <li>pip uninstall nombre_del_paquete : desinstalar el paquete que queramos</li>
+                            <li>pip install --upgrade nombre_del_paquete : actualizar a la última versión</li>
+                            <li>import nombre_paquete as abreviatura : importar el paquete que queramos y asignarle una abreviatura</li>
+                        </div>    
+                    </div>
+                </div>
+
+                <a href="#header" class="btn-up" target="_top">
+                    <i class="fa-solid fa-up-long"></i>
+                </a>
+
+                <div class="pie-pagina">
+                    <div class="copywright">
+                        <a href="https://soluciones-tecnologicas-kaizen.com/index.html">&copy; 2024 alharuty &#124; Ejercicio realizado para Checkpoint5</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    
+        <div class="contenedor-derecho">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
