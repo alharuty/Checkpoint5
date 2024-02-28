@@ -200,20 +200,25 @@
                              en ser creados por otros programadores que actualmente nos permiten reutilizarlos, al ser de domino público en Python Package Index (<a href="https://pypi.org/">Página oficial</a>).</p>
                         <strong class="parrafo">¿Y cómo puedo utilizar estos módilos de PyPi?</strong>
                         <div class="explicacion">
-                            <p>Para poder utilizar los paquetes pip, primero debemos instalaros y tenerlos actualizados en la última versión siempre.</p>
-                            <strong>PASO 1: INSTALAR EL PAQUETE DESEADO</strong>
+                            <p>Para poder utilizar los paquetes pip, primero debemos instalar el propio pip, y después instalar los paquetes y tenerlos actualizados en la última versión siempre.</p>
+                            <strong>PASO 1: INSTALAR PIP EN NUESTRO TERMINAL</strong>
+                            <p>El comando para instalar el pip es: python get-pip.py </p>
+                            <img src="pip-instalar.png" alt="instalar pip en python">
+                            <p>Además, si tras instalarlo queremos saber qué versión es la que tenemos, podemos averiguarlo con el comando: pip --version como se muestra en el siguient ejemplo.</p>
+                            <img src="pip-version.png" alt="version pip en python">
+                            <strong>PASO 2: INSTALAR EL PAQUETE DESEADO</strong>
                             <p>En este ejemplo vamos a instalar un paquete llamado NumPy, este es un paquete que nos permite procesar números, strings, y objetos, mediante diferentes funciones por los que está compuesto.</p>
                             <p> Para ello iremos a nuestra terminal y escribiremos el comando: pip install numpy y presionaremos enter.</p>
                             <img src="install-numpy.png" alt="instalar nump en python">
                             <p>Una vez instalado nos aparecerá en pantalla el mensaje: Successfully installed numpy-version</p>
                             <img src="numpy-instalado.png" alt="instalar nump en python">
                             <p>En caso de tenerlo ya instalado nos aparecería el mensaje: Requirement already satisfied: numpy directorio/donde/está/instalado </p>
-                            <strong>PASO 2: IMPORTARLO PARA PODER USARLO</strong>
+                            <strong>PASO 3: IMPORTARLO PARA PODER USARLO</strong>
                             <p>Para poder usar las funciones de estos módulos, debemos importarlos cada vez que los necesitemos, ya sean dentro de un archivo.py o desde el terminal, en modo repl. El comando es: import numpy</p>
                             <img src="import-numpy.png" alt="importar nump en python">
                             <img src="numpy-archivo.png" alt="usando nump en python">
                             <br>
-                            <strong>PASO 3: LLAMAR A LA FUNCIÓN QUE QUERAMOS</strong>
+                            <strong>PASO 4: LLAMAR A LA FUNCIÓN QUE QUERAMOS</strong>
                             <p>En nuestro caso usaremos la función numpy.arange() , que sirve para crear un array con números del rango que queramos.</p>
                             <img src="usando-numpy.png" alt="usando nump en python">
                             <img src="numpy-archivo-print.png" alt="usando nump en python">
